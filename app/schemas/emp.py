@@ -31,3 +31,17 @@ class EmployeeInfo(BaseModel):
     name: str
     department_no: int
     salary: int
+
+
+class SalaryCommissionResponse(BaseModel):
+    salary: int
+    commission: Optional[int] = None
+
+
+class EmployeeMessageResponse(BaseModel):
+    msg: str
+
+class EmployeStatusResponse(BaseModel):
+    ename:str
+    sal: int
+    status: str
