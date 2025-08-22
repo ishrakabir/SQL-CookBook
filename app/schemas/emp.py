@@ -45,3 +45,12 @@ class EmployeStatusResponse(BaseModel):
     ename:str
     sal: int
     status: str
+
+class EmployeeSortedSalary(BaseModel):
+    ename: str
+    sal: int
+    deptno: int
+
+class EmployeeSortedJob(BaseModel):
+    ename: str
+    job: str
