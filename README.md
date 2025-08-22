@@ -3,7 +3,6 @@
   <img src="https://img.shields.io/badge/PostgreSQL-✔-336791?logo=postgresql&logoColor=white" alt="Postgres" />
   <img src="https://img.shields.io/badge/FastAPI-⚡-009688?logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/SQLAlchemy-async-ff5533?logo=python&logoColor=white" alt="SQLAlchemy" />
-  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License" />
 </p>
 
 <h1 align="center">
