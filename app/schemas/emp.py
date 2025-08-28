@@ -43,15 +43,42 @@ class EmployeeMessageResponse(BaseModel):
 
 
 class EmployeStatusResponse(BaseModel):
-    ename:str
+    ename: str
     sal: int
     status: str
+
 
 class EmployeeSortedSalary(BaseModel):
     ename: str
     sal: int
     deptno: int
 
+
 class EmployeeSortedJob(BaseModel):
     ename: str
     job: str
+
+
+class EmployeeDeptUnion(BaseModel):
+    ename_and_dname: str
+    deptno: int
+
+
+class EMPViewResponse(BaseModel):
+    empno: int
+    ename: str
+    job: str
+    mgr: int | None
+    hiredate: date
+    sal: int
+    comm: int | None
+    deptno: int
+    cnt: int
+
+    class Config:
+        from_attributes = True
+
+
+class EmployeeDeptJoin(BaseModel):
+    ename: str
+    loc: str
