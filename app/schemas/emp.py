@@ -41,6 +41,7 @@ class SalaryCommissionResponse(BaseModel):
 class EmployeeMessageResponse(BaseModel):
     msg: str
 
+
 class EmployeStatusResponse(BaseModel):
     ename:str
     sal: int
