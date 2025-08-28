@@ -59,8 +59,8 @@ This makes it easy to test SQL concepts via **live API endpoints**.
 |----|----------------------------------------|----------|
 | 1  | Retrieving Records                     | ✅ Done |
 | 2  | Sorting Query Results                  | ✅ Done |
-| 3  | Working with Multiple Tables           | 🚧 In Progress |
-| 4  | Inserting, Updating, and Deleting      | ⏳ To Do |
+| 3  | Working with Multiple Tables           | ✅ Done |
+| 4  | Inserting, Updating, and Deleting      | 🚧 In Progress |
 | 5  | Metadata Queries                       | ⏳ To Do |
 | 6  | Working with Strings                   | ⏳ To Do |
 | 7  | Working with Numbers                   | ⏳ To Do |
