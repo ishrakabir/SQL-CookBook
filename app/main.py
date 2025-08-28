@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import retrieving_records, sorting_query_results
+from app.routers import retrieving_records, sorting_query_results, working_with_multiple_tables
 
 app = FastAPI()
 
@@ -17,4 +17,9 @@ app.include_router(
 )
 app.include_router(
     sorting_query_results.router, prefix="/sorting-query-results", tags=["sorting-query-results"]
+)
+app.include_router(
+    working_with_multiple_tables.router,
+    prefix="/working-with-multiple-tables",
+    tags=["working-with-multiple-tables"],
 )
