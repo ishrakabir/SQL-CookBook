@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import retrieving_records, sorting_query_results, working_with_multiple_tables
+from app.routers import (
+    retrieving_records,
+    sorting_query_results,
+    working_with_multiple_tables,
+    inserting_updating_and_deleting,
+)
 
 app = FastAPI()
 
@@ -22,4 +27,9 @@ app.include_router(
     working_with_multiple_tables.router,
     prefix="/working-with-multiple-tables",
     tags=["working-with-multiple-tables"],
+)
+app.include_router(
+    inserting_updating_and_deleting.router,
+    prefix="/inserting-updating-and-deleting",
+    tags=["inserting-updating-and-deleting"],
 )
